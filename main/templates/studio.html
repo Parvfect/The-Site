@@ -1,0 +1,27 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Photo Studio</h1>
+  <p class="w3-xlarge">Photographs that I have taken over time.</p>
+  <p class="w3-xlarge">Some with context, some without.</p>
+  
+  </header>
+  <br><br><br><br>
+  <div class = "card-columns">
+{% for i in content %}
+  <div class="card" >
+    
+    <img class="card-img-top" src="/media/{{i.img}}" alt="Card image cap" >
+    <div class="card-body" style="background-color: black; color: white;">
+      <h3>{{i.name}}</h3>
+      <p class="card-text">{{i.description}}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+      
+  </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Book Recos</h1>
+  <p class="w3-xlarge">With short descriptions</p>
+  <br><br><br><br>
+  {% for i in books %}
+  <a href = "{{i.name}}">
+  <img src = "/media/{{i.img}}" style="width: 300px;height: 450px;">
+</a>
+  {% endfor %}
+  </header>
+
+   
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% for i in obj %}
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+    <img src = "/media/{{i.img}}" align = "center" style="height: 500px;">
+
+
+    
+
+    <br><br><br><br>    
+   <h2 style="padding-left: 100px;padding-right: 100px;">{{i.summary}}</h2> 
+   <br>
+   <a href = "{{i.link}}" style="color: white;">See it on GoodReads</h6><br>
+    <a href ="{{i.url}}" style="color: white;">Buy it on Amazon</a>
+   </header>
+
+{% endfor %}
+
+{% endblock %}

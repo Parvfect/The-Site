@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Essays</h1>
+    <p class="w3-xlarge">Debating moral questions </p>
+    <br><br>
+</header>
+<br>
+<div class="card-group" >
+        {% for i in stories %}
+        <br>
+        <div class="card" >
+            <div class="card-body">
+                <a href = "{{i.slug}}" class="card-title" style="color: black;"><h3>{{i.name}}</h3></a>
+                <p class="card-text" ><h4>{{i.description|safe}}</h4></div>
+            </div>
+        </div>      
+        {% endfor %} 
+    </div>
+</div>
+
+
+
+{% endblock %}
