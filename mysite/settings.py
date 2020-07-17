@@ -25,7 +25,7 @@ SECRET_KEY = 'rzqq%*3k@n=_gz_if2(^gj4^f6t2y2su(#0ins-rsv4_33a^90'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['parvfections.herokuapp.com']
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
     'width': 1120,
