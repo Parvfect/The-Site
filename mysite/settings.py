@@ -20,10 +20,10 @@ PROJECT_DIR = os.path.realpath(os.path.dirname('/home/parv/Documents/django/mysi
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'rzqq%*3k@n=_gz_if2(^gj4^f6t2y2su(#0ins-rsv4_33a^90'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['parvfections.herokuapp.com']
 TINYMCE_DEFAULT_CONFIG = {
